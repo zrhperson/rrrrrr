@@ -1,0 +1,119 @@
+/**
+ * @title data 数据源，一次性传入，可合并单元格
+ */
+import DataTable from 'bocomui/DataTable3'
+
+class DataTableRowData extends Component {
+
+  constructor(props) {
+    super()
+    this.column1 = [{
+      title: '',
+      v: '1'
+    },{
+      title: '分类',
+      v: '7'
+    }]
+    this.column2 = [{
+      title: '',
+      v: '1'
+    },{
+      title: '',
+      v: '1'
+    },{
+      title: '一类',
+      v: '2'
+    },{
+      title: '二类',
+      v: '2'
+    },{
+      title: '三类',
+      v: '2'
+    }]
+    this.columns = [{
+      title: '姓名',
+      key: 'name',
+      width: '10%'
+    },{
+      title: '性别',
+      key: 'sex',
+      width: '10%'
+    }, {
+      title: '年龄',
+      key: 'age',
+      sortable: true,
+      width: '10%'
+    }, {
+      title: '注册日期',
+      key: 'joinDate',
+      sortable: true,
+      width: '20%'
+    },{
+      title: '电话',
+      key: 'number',
+      sortable: true,
+      width: '20%'
+    },{
+      title: '籍贯',
+      key: 'city',
+      width: '10%'
+    },{
+      title: '操作',
+      render: () => <a href="">删除</a>,
+      width: '20%'
+    }]
+    
+    this.data = [{
+      name: 'John',
+      sex: '男',
+      age: 21,
+      number: 123456,
+      joinDate: '2015-01-01',
+      city: '上海'
+    },{
+      name: 'David',
+      sex: '男',
+      age: 32,
+      number: 1234561,
+      joinDate: '2015-02-01',
+      city: '北京'
+    },{
+      name: 'Lili',
+      sex: '男',
+      age: 28,
+      number: 1234562,
+      joinDate: '2013-01-01',
+      city: '上海'
+    },{
+      name: 'Tomas',
+      sex: '女',
+      age: 11,
+      number: 1234563,
+      joinDate: '2017-01-01',
+      city: '北京'
+    },{
+      name: 'Tina',
+      sex: '女',
+      age: 13,
+      number: 1234564,
+      joinDate: '2017-01-01',
+      city: '北京'
+    },{
+      name: 'Oabama',
+      sex: '女',
+      age: 51,
+      number: 1234560,
+      joinDate: '2017-01-01',
+      city: '上海'
+    }]
+  }
+
+  render() {
+   
+    return (
+      <DataTable column1={this.column1} column2={this.column2} columns={this.columns} data={this.data} pageSize={5}/>
+    )
+  }
+}
+
+@component DataTable3

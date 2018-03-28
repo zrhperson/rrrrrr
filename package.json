@@ -1,0 +1,89 @@
+{
+  "name": "bcomui-doc",
+  "version": "1.0.0",
+  "description": "企业级 React 组件库 🚀",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-dev ./server.js",
+    "pack": "webpack -p --progress --config ./webpack.config.js",
+    "server": "set NODE_ENV=production && pm2 start ./server.js --name bocomui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://182.119.212.249:bcomui-doc.git"
+  },
+  "keywords": [
+    "react components",
+    "ui component",
+    "react ui",
+    "bcomui"
+  ],
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/baifendian/bfd-ui/issues"
+  },
+  "homepage": "https://github.com/baifendian/bfd-ui",
+  "dependencies": {
+    "@bocom/bocomui": "^0.1.5",
+    "classlist": "^1.0.1",
+    "classnames": "^2.2.5",
+    "d3": "^4.7.4",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^5.0.0",
+    "nprogress": "^0.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0",
+    "react-update": "^0.4.4",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-runtime": "^6.23.0",
+    "body-parser": "^1.17.1",
+    "code-beautify": "0.0.11",
+    "compression": "^1.6.2",
+    "css-loader": "^0.28.0",
+    "echarts": "^3.6.2",
+    "express": "^4.15.2",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.4",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "markdown-loader": "^2.0.0",
+    "multiparty": "^4.1.3",
+    "node-dev": "^3.1.3",
+    "pm2": "^2.4.1",
+    "postcss-for": "^2.1.1",
+    "postcss-loader": "^1.3.3",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-livereload-plugin": "^0.10.0"
+  },
+  "jest": {
+    "globals": {},
+    "scriptPreprocessor": "<rootDir>/jestPreproess",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules",
+      "<rootDir>/src"
+    ],
+    "testPathDirs": [
+      "<rootDir>/src"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testFileExtensions": [
+      "js"
+    ]
+  }
+}

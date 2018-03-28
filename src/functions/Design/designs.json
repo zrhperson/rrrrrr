@@ -1,0 +1,77 @@
+[
+  {
+    "title": "基本理念",
+    "icon": "th-large",
+    "name": "concept",
+    "components": [
+      {
+        "title": "基本理念",
+        "name": "BasicConcept"
+      }
+    ]
+  },
+  {
+    "title": "设计原则",
+    "icon": "th-large",
+    "name": "principle",
+    "components": [
+      {
+        "title": "亲密性",
+        "name": "gap"
+      },
+      {
+        "title": "对齐",
+        "name": "align"
+      },
+      {
+        "title": "对比",
+        "name": "contrast"
+      },
+      {
+        "title": "重复",
+        "name": "repetition"
+      },
+      {
+        "title": "直截了当",
+        "name": "direct"
+      },
+      {
+        "title": "足不出户",
+        "name": "stay"
+      },
+      {
+        "title": "简化交互",
+        "name": "lightweight"
+      },
+      {
+        "title": "即时反应",
+        "name": "reaction"
+      }
+    ]
+  }, {
+  "title": "设计基础",
+  "icon": "th-large",
+  "name": "base",
+  "components": [
+    {
+      "title": "色彩",
+      "name": "DesignColor"
+    },
+    {
+      "title": "图标",
+      "name": "icon-cn"
+    },
+    {
+      "title": "字体",
+      "name": "font-cn"
+    },
+    {
+      "title": "文案",
+      "name": "copywriting-cn"
+    },
+    {
+      "title": "布局",
+      "name": "layout-cn"
+    }
+  ]}
+]
